@@ -118,3 +118,9 @@
 
 // Define this for devices with external power.
 //#define LMIC_MCMD_DEVS_BATT_DEFAULT MCMD_DEVS_EXT_POWER
+
+// LMIC_ENABLE_class_c
+// Define this non-zero to include Class C support in the code.
+#if !defined(LMIC_ENABLE_class_c)
+# define LMIC_ENABLE_class_c 0	/* PARAM */
+#endif
